@@ -34,3 +34,12 @@ metadata:
 spec:
   interval: 10m
   url: https://alizandieh.github.io/helm-chart/
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: atlantis
+  namespace: flux-system
+spec:
+  interval: 10m
+  url: https://runatlantis.github.io/helm-charts

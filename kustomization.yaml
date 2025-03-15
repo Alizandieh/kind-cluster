@@ -8,3 +8,4 @@ resources:
   - core-services/prometheus
 ################
   - apps/react-app
+  - apps/atlantis
