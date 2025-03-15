@@ -16,7 +16,18 @@ spec:
 
   values:
 
+    github:
+      user: alizandieh
+
+    gitconfigSecretName: "atlantis-vcs"
+
     ingress:
       enabled: true
       ingressClassName: nginx
       host: atlantis.local
+
+    webhook_ingress:
+      enabled: true
+      ingressClassName: nginx
+      host: atlantis-webook.local
+      path: /events
