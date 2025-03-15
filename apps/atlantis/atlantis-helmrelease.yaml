@@ -22,7 +22,6 @@ spec:
       secret: dammy
 
     orgAllowlist: "*"
-    gitconfigSecretName: "atlantis-vcs"
     vcsSecretName: "atlantis-vcs"
 
     service:
