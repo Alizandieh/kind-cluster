@@ -1,0 +1,1 @@
+helm upgrade -i -n prometheus prometheus prometheus-community/kube-prometheus-stack -f prometheus-values.yaml --create-namespace

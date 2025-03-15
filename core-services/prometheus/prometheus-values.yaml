@@ -1,0 +1,23 @@
+grafana:
+  ingress:
+    enabled: true
+    ingressClassName: "nginx"
+    hosts:
+      - grafana.local
+    path: /
+
+alertmanager:
+  ingress:
+    enabled: true
+    ingressClassName: "nginx"
+    hosts:
+      - alertmanager.local
+    path: /
+
+prometheus:
+  ingress:
+    enabled: true
+    ingressClassName: "nginx"
+    hosts:
+      - prometheus.local
+    path: /

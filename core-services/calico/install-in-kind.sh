@@ -1,0 +1,1 @@
+helm install calico projectcalico/tigera-operator --namespace tigera-operator --create-namespace

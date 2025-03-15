@@ -7,12 +7,12 @@ This is a Kind k8s cluster which using FluxCD for deploying the components and c
 bootstrap command:
 
 ```
-export GITLAB_TOKEN=<your-token>
+export GITHUB_TOKEN=<gh-token>
 
-flux bootstrap gitlab --token-auth \
---owner=Consensys/codefi/infrastructure/kubernetes \
---components-extra=image-reflector-controller,image-automation-controller \
---repository=tenant-cluster-configs-sample \
---branch=master
+flux bootstrap github --token-auth \
+  --owner=alizandieh \
+  --repository=kind-cluster \
+  --branch=main \
+  --personal
 
 ```

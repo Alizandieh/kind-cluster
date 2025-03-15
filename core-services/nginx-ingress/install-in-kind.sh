@@ -1,0 +1,1 @@
+helm upgrade -i ingress-nginx ingress-nginx/ingress-nginx -f ingress-values.yaml --namespace ingress --create-namespace

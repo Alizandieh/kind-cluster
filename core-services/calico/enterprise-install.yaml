@@ -1,0 +1,42 @@
+apiVersion: operator.tigera.io/v1
+kind: Installation
+metadata:
+  name: default
+spec:
+  variant: Calico
+  calicoNetwork:
+    ipPools:
+    - blockSize: 26
+      cidr: 192.168.0.0/16
+      encapsulation: VXLANCrossSubnet
+      natOutgoing: Enabled
+      nodeSelector: all()
+
+---
+
+# This section installs and configures the Calico Enterprise API server.
+# For more information, see: https://docs.tigera.io/master/reference/installation/api#operator.tigera.io/v1.APIServer
+apiVersion: operator.tigera.io/v1
+kind: APIServer
+metadata:
+  name: tigera-secure
+
+---
+
+# This section configures the Tigera web manager.
+# Remove this section for a Managed cluster.
+# For more information, see: https://docs.tigera.io/master/reference/installation/api#operator.tigera.io/v1.Manager
+apiVersion: operator.tigera.io/v1
+kind: Manager
+metadata:
+  name: tigera-secure
+
+---
+
+apiVersion: operator.tigera.io/v1
+kind: ManagementCluster
+metadata:
+  name: tigera-secure
+spec:
+  ui:
+    enabled: true
