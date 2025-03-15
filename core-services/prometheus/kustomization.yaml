@@ -4,4 +4,3 @@ namespace: prometheus
 resources:
   - prometheus-namespace.yaml
   - prometheus-helmrelease.yaml
-  - prometheus-namespace.yaml
