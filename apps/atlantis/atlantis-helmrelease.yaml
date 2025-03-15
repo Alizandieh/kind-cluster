@@ -31,3 +31,4 @@ spec:
       enabled: true
       ingressClassName: nginx
       host: atlantis.local
+      path: /
