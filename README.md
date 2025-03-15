@@ -29,9 +29,9 @@ flux bootstrap github --token-auth \
 
 Before enabling Atlatis you need to create the secret below for Github PAT and Webhook secret:
 ```
-echo -n "yourtoken" > token
-echo -n "yoursecret" > webhook-secret
-kubectl -n atlantis create secret generic atlantis-vcs --from-file=token --from-file=webhook-secret
+echo -n "your PAT token" > github_token
+echo -n "your webhook secret" > github_secret
+kubectl -n atlantis create secret generic atlantis-vcs --from-file=github_token --from-file=github_secret
 ```
 
 ## To Delete the cluster 
