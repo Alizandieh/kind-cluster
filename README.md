@@ -8,7 +8,7 @@ In prerequisite/kind folder run ./create.sh
 
 To create a local Loadbalancer run the ./loadbalancer.sh
 
-## Install Calico 
+## Install Calico CNI
 In prerequisite/calico folder run ./install-in-kind.sh
 
 ## Flux Bootstraping
@@ -23,4 +23,10 @@ flux bootstrap github --token-auth \
   --branch=main \
   --personal
 
+```
+
+## To Delete the cluster 
+
+```
+kinkind delete cluster --name k1
 ```
