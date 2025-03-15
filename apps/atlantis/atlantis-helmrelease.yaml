@@ -18,6 +18,7 @@ spec:
 
     github:
       user: alizandieh
+      token: dammy
 
     gitconfigSecretName: "atlantis-vcs"
 
