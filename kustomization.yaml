@@ -5,4 +5,4 @@ resources:
   - flux-resources
 ################
   - core-services/nginx-ingress
-#  - core-services/prometheus
+  - core-services/prometheus
