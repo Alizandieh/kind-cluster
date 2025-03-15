@@ -19,8 +19,10 @@ spec:
     github:
       user: alizandieh
       token: dammy
+      secret: dammy
 
     gitconfigSecretName: "atlantis-vcs"
+    vcsSecretName: "atlantis-vcs"
 
     ingress:
       enabled: true
