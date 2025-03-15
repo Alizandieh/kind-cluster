@@ -23,6 +23,7 @@ spec:
 
     orgAllowlist: "*"
     vcsSecretName: "atlantis-vcs"
+    awsSecretName: "aws-vcs"
 
     service:
       type: ClusterIP

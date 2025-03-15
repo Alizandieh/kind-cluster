@@ -34,6 +34,12 @@ echo -n "your webhook secret" > github_secret
 kubectl -n atlantis create secret generic atlantis-vcs --from-file=github_token --from-file=github_secret
 ```
 
+If you want to add AWS creds as a k8s secret:
+create "credentials" file with the details inside then 
+```
+kubectl -n atlantis create secret generic aws-vcs --from-file=credentials
+```
+
 ## To Delete the cluster 
 
 ```
