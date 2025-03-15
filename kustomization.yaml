@@ -6,3 +6,5 @@ resources:
 ################
   - core-services/nginx-ingress
   - core-services/prometheus
+################
+  - apps/react-app
