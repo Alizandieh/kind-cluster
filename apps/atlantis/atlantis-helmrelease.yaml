@@ -30,5 +30,5 @@ spec:
     ingress:
       enabled: true
       ingressClassName: nginx
-      host: atlantis.local
+      host: atlantis.ali-zandieh.com
       path: /
