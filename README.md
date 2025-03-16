@@ -7,9 +7,9 @@ I'm using FluxCD for deploying the apps and core-services.
 - Docker - I'm using Docker Desktop in Windows and WSL(ubuntu)
 - Kubectl
 - Helm
-- Kind  - [Install Kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation) 
-- Kind Cloud Provider - [Installation guide](https://github.com/kubernetes-sigs/cloud-provider-kind?tab=readme-ov-file#install)
-- Flux CLI - [Install docs](https://fluxcd.io/flux/cmd/)
+- Kind  - [Install Kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation){:target="_blank"}
+- Kind Cloud Provider - [Installation guide](https://github.com/kubernetes-sigs/cloud-provider-kind?tab=readme-ov-file#install){:target="_blank"}
+- Flux CLI - [Install docs](https://fluxcd.io/flux/cmd/){:target="_blank"}
 
 ## Create Kind cluster 
 I create a Kind cluster with some port mapping and disbale the default CNI
