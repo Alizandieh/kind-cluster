@@ -1,6 +1,6 @@
 # Kubernetes cluster - Kind
 
-This is a Local Kind k8s cluster setup written by Ali Zandieh for POCs and tests. 
+This is a Local Kind k8s cluster setup written by **Ali Zandieh** for POCs and tests. 
 
 I'm using FluxCD for deploying the apps and core-services.
 
@@ -47,6 +47,7 @@ flux bootstrap github --token-auth \
 ## Atlantis 
 
 Before enabling Atlatis you need to create the secret below for Github PAT and Webhook secret.
+
 [Atlantis docs](https://www.runatlantis.io/docs/installation-guide.html)
 ```
 echo -n "your PAT token" > github_token
