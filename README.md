@@ -15,7 +15,7 @@ I'm using FluxCD for deploying the apps and core-services.
 ## Create Kind cluster 
 It creates a Kind cluster with 
 - 1 control-plane and 2 worker nodes. 
-- Some port mappings to the host 
+- Some port mappings (80, 443) to the host 
 - Disbales the default CNI (because I want to replace it with Calico)
 ```
 cd prerequisite/kind 
@@ -46,7 +46,8 @@ flux bootstrap github --token-auth \
 
 ## Atlantis 
 
-Before enabling Atlatis you need to create the secret below for Github PAT and Webhook secret:
+Before enabling Atlatis you need to create the secret below for Github PAT and Webhook secret.
+[Atlantis docs](https://www.runatlantis.io/docs/installation-guide.html)
 ```
 echo -n "your PAT token" > github_token
 echo -n "your webhook secret" > github_secret
